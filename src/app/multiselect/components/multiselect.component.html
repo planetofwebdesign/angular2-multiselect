@@ -1,6 +1,6 @@
 
 <div class="multiselect-wrapper">
-    <div  class="multiselect-header" (click)="toggleList()" #header>
+    <div  class="multiselect-header" (click)="this.expanded = !this.expanded" #header>
         <span *ngIf="!selectedValues.length"> Select Some Value</span>
         <div class="chip" *ngFor="let value of selectedValues">
             {{value.name}}
@@ -11,15 +11,12 @@
     <input type="text" class="multiselect-filter" [(ngModel)]= "filterString" >
     <hr>
     <ul>
-        <li *ngFor="let item of items | multiselectfilter:filterString">
-            <input type="checkbox" [checked]="isChecked(item)" value="item" (click)="toggleValue(item, checkbox)" #checkbox>
-            {{item.name}}
+        <li *ngFor="let option of options | multiselectfilter:filterString">
+            <input type="checkbox" [checked]="isChecked(option)" value="option" (click)="toggleValue(option, checkbox)" #checkbox>
+            {{option.name}}
         </li>
     </ul>
 </div>
-  <div class="value-btn">
-        <button class="btn btn-primary" (click)="getSelectedValues()">Get Values</button>
-    </div> 
 </div>
     
 

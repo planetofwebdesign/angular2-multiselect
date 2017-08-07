@@ -35,7 +35,7 @@
     box-shadow: 0 1px 1px rgba(50,50,50,0.1);
     cursor: pointer;
     outline: none;
-
+    z-index: 2;
    //  font-weight: bold;  
 }
 .multiselect-header {
@@ -63,7 +63,7 @@
     right: 0;
     max-height: 300px;
     overflow: auto;
-  
+    z-index: 100;
     background: white;
     border-radius: inherit;
     border: 1px solid rgba(0,0,0,0.17);
@@ -94,13 +94,4 @@
          overflow: auto;
     }
 }
-
-.value-btn {
-    position: absolute;
-    right: -110px;
-    top: 5px;
-    width: 100px;
-}
-
-
-
+    

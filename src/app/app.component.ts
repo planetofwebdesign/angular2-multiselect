@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { FormBuilder, FormGroup , FormControl } from '@angular/forms';
+ import { FormBuilder, FormGroup , FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +9,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app works!';
   
-
-
+  form: FormGroup;
+  constructor( 
+    private fb: FormBuilder
+  ) {
+    this.form = fb.group({
+      'mselect': ['']
+    })
+  }
 
   items: any[] = [{
     id: 1,
