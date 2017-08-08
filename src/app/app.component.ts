@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
-  
+
   form: FormGroup;
-  constructor( 
+  constructor(
     private fb: FormBuilder
   ) {
     this.form = fb.group({
@@ -44,7 +44,7 @@ export class AppComponent {
     name: 'Xiaomi'
   }, {
     id: 9,
-    name}];
+    name: 'karbon'}];
 
-    
+
 }
