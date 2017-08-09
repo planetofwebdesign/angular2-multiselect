@@ -6,10 +6,13 @@ import { FormsModule } from '@angular/forms';
 import { MulltiselectComponent } from './components/multiselect.component';
 import { MultiselectFilterPipe } from './components/multiselect-filter.pipe';
 
+import { ClickOutsideDirective } from './components/click-outside.directive';
+
 @NgModule({
  declarations: [
     MulltiselectComponent,
-    MultiselectFilterPipe
+    MultiselectFilterPipe,
+    ClickOutsideDirective
   ],
   imports: [
     CommonModule,

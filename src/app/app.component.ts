@@ -44,7 +44,36 @@ export class AppComponent {
     name: 'Xiaomi'
   }, {
     id: 9,
-    name}];
+    name: 'karbon'
+  },
+    {
+    id: 11,
+    name: 'Apple1'
+  }, {
+    id: 12,
+    name: 'Blackberry1'
+  }, {
+    id: 13,
+    name: 'HTC1'
+  }, {
+    id: 14,
+    name: 'Sony 1'
+  }, {
+    id:15,
+    name: 'Motorola11' 
+  }, {
+    id: 16,
+    name: 'Nokia1'
+  }, {
+    id: 17,
+    name: 'Lenovo1'
+  }, {
+    id: 18,
+    name: 'Xiaomi1'
+  }, {
+    id: 19,
+    name: 'karbon1'
+  }];
 
     
 }

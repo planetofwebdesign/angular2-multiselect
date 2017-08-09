@@ -1,6 +1,6 @@
 
-<div class="multiselect-wrapper">
-    <div  class="multiselect-header" (click)="this.expanded = !this.expanded" #header>
+<div class="multiselect-wrapper" (clickOutside)="expanded ? expanded = !expanded : '' ">
+    <div  class="multiselect-header" (click)="expanded = !expanded"  #header>
         <span *ngIf="!selectedValues.length"> Select Some Value</span>
         <div class="chip" *ngFor="let value of selectedValues">
             {{value.name}}

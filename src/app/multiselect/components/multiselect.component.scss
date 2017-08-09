@@ -25,7 +25,7 @@
 
 .multiselect-wrapper {
     position: relative;
-    width: 250px;
+    width: 100%;
     margin: 0 auto;
     padding: 10px;
 
@@ -35,23 +35,16 @@
     box-shadow: 0 1px 1px rgba(50,50,50,0.1);
     cursor: pointer;
     outline: none;
-    z-index: 2;
-   //  font-weight: bold;  
+    z-index: 2;  
 }
 .multiselect-header {
     position: relative;
     width: 100%;
+    max-height: 70px;
     border: none !important;
     outline: none !important;
     background-color: transparent;
-    // span {
-    //     border: 1px solid #000;
-    //     border-radius: 12px;
-    //     background-color: green;
-    //     padding: 2px;
-    //     margin-right: 1px;
-    //     width: 50px;
-    // }
+    overflow: auto;
 }
 
 .mutliSelect-content {

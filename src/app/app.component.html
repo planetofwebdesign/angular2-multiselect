@@ -1,17 +1,23 @@
-
-
 <div class="container">
-    <div class="col-md-12">
-        <form [formGroup]="form">
-                <app-multiselect [options]="items" formControlName="mselect"></app-multiselect>
-        </form>
-    </div>
-    <div class="col-md-12 result">
-        <div class="row">
-            <pre>{{ form.value | json }}</pre>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Angular 2 Multiselect Demo</h2>
+            <hr>
         </div>
+    </div>
+    <div class="row">
         
+        <div class="col-md-4">
+            <form [formGroup]="form">
+                <app-multiselect [options]="items" formControlName="mselect"></app-multiselect>
+            </form>
+        </div>
+         <div class="col-md-8">
+            <pre class="result">{{ form.value | json }}</pre>
+        </div>
+
+    </div>
+    <div class="row">
+       
     </div>
 </div>
-
-
